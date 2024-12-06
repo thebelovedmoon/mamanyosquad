@@ -2,15 +2,15 @@
 
 // global init
 function init() {
-  pwaInit(); // initialize PWA
   triggerResponsive();
   showVersion();
   viClock(); // js clock
   start(); // per page
+  // pwaInit(); // initialize PWA
 }
 
 function showVersion() {
-  document.getElementById("siteVersion").innerHTML = "v20240518.19.2";
+  document.getElementById("siteVersion").innerHTML = "v20240518.19.3";
 }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
