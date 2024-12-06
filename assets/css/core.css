@@ -127,16 +127,16 @@ button:active {
 /* toggle between "inline-block" and "none" if there are active notifications */
 /* for .xvvNotify, uncomment "margin-right" if it'll be the only one in the navbar */
 .xvvNotify {
-  /* display: none; */
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   /* margin-right: 19px; */
 }
 .xvvNotify:hover {
   color: #ff0000;
 }
 .xvvEvent {
-  /* display: none; */
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   margin-right: 19px;
 }
 .xvvEvent:hover {
