@@ -1,0 +1,42 @@
+.heroHead1 {
+  background-image: url("/assets/images/venusIsland/vi_1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.heroHead2 {
+  background-color: #161224a0;
+  padding: 285px 19px;
+  padding-top: 380px;
+  text-align: center;
+}
+
+div[policySheet] > span {
+  font-size: medium;
+  text-transform: uppercase;
+}
+span[changeLang] {
+  cursor: pointer;
+}
+span[changeLang]:hover {
+  color: #ff0000;
+}
+#ja {
+  display: none;
+}
+
+span[enfUpd] {
+  text-transform: initial !important;
+  font-style: italic;
+}
+
+.policyRef:link, .policyRef:visited {
+  color: #ff0000;
+}
+.policyRef:hover {
+  color: #dd0000;
+}
+.policyRef:active {
+  color: #ff5555;
+}

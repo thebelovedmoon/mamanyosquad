@@ -4,18 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>Page not found</title>
+    <title>An Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」 &mdash; 16 Apr 2023</title>
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
-    <!--
-    <meta name="og:type" content="website">
-    <meta name="og:title" content="#MamaNyoSquad">
-    <meta name="og:image" content="https://mamanyosquad.github.io/assets/preview.png">
-    <meta name="og:url" content="https://mamanyosquad.github.io">
-    <meta name="og:description" content="Enter the universe through the eyes of the Tengu! 💕">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@MamaNyoSquad">
-    -->
     <meta name="theme-color" content="#161224">
     <meta name="msapplication-TileColor" content="#161224">
     <meta name="msapplication-navbutton-color" content="#161224">
@@ -24,15 +15,24 @@
     <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
     <style type="text/css">
       /* css args here */
-      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts icons */
       @import url("/assets/css/core.css");
       @import url("/assets/css/responsive.css");
       @import url("/assets/css/index.css");
+      @import url("/assets/css/blog.css");
+      .heroBack {
+        background-image: url("/assets/images/bloghead/20230416_XVVGL@4.png");
+        background-attachment: unset;
+      }
+      .heroFore {
+        background-color: unset;
+        padding: calc(285px + 95px) 19px 285px 19px;
+      }
     </style>
     <!-- custom js -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
     <script src="/assets/js/index.js" type="text/javascript"></script>
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
+    <script src="/assets/js/blog.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
@@ -47,21 +47,56 @@
       <header class="desktop">
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
-        <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+          <div class="linkRefs">
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
           </div>
         </div>
       </header>
       <header class="mobile">
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
-        <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+          <div class="linkRefs">
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+          </div>
         </div>
       </header>
     </div>
-    <div class="notFoundHead">
-      <img style="margin: 0 auto;" src="/assets/images/fiona_sad.png" alt="" width="285px">
+    <div class="hero"> <!-- hero section -->
+      <div class="heroBack"><div class="heroFore"></div></div>
+    </div>
+    <div feed>
+      <div>
+        <div class="blogText">
+          <span blogType>PRESS RELEASE</span>
+          <h1>An Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」</h1>
+          <span>16 Apr 2023</span>
+          <br><br><br>
+          <p>This is <b>thebelovedmoon</b>, the General Manager of #MamaNyoSquad.</p>
+          <p>
+            I would like to take this opportunity to thank the whole of DOAXVV's Global
+            Edition Development Staff for their 4 years of service to the fans through
+            Xtreme Venus Vacation.
+          </p>
+          <p>
+            As to where it stood, many things have happened that reshaped the Venus Island
+            to what it is today (despite being a little behind its Japanese counterpart);
+            which brought us new features, new outfits, and more ways to appreciate the
+            characters in its fullest form (despite the setbacks from some members in the
+            community).
+          </p>
+          <p>
+            As such, we at #MamaNyoSquad (together with Emmannuel Ortega, the Social & Web
+            Manager) would like to offer the whole Global Edition Staff our token of
+            gratitude for such amazing moments and we look forward to spending the next
+            few years together with Japanese Edition.
+          </p>
+          <p>
+            <b><i>Enter the universe through the eyes of the Tengu! 💕</i></b>
+          </p>
+        </div>
+      </div>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">
