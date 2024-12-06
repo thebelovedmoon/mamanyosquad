@@ -1,0 +1,28 @@
+.heroBack { background-image: url("/assets/images/venusIsland/vi_2.jpg"); }
+
+/* change language */
+div[feed] > div > div > span {
+  font-size: medium;
+  text-transform: uppercase;
+}
+div[feed] > div > div > span > span {
+  cursor: pointer;
+}
+div[feed] > div > div > span > span:hover {
+  color: #ff0000;
+}
+#ja {
+  display: none;
+}
+
+h2 > img[xvvIcon] {
+  height: calc(1.9em * 0.625);
+  width: auto;
+  display: inline-block;
+  margin-bottom: -0.19em;
+}
+
+li[important] {
+  font-weight: bold;
+  display: none; /* toggle between "none" and "list-item" in maintenance.js */
+}
