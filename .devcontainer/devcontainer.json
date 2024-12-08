@@ -1,0 +1,49 @@
+{
+  "name": "mamanyosquad.github.io",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "window.commandCenter": false,
+        "editor.fontFamily": "\"Cascadia Code\"",
+        "files.autoGuessEncoding": true,
+        "redhat.telemetry.enabled": true,
+        "editor.stickyScroll.enabled": false,
+        "editor.tabSize": 2,
+        "[xml]": {
+          "editor.defaultFormatter": "DotJoshJohnson.xml"
+        },
+        "[html]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[css]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dotjoshjohnson.xml",
+        "redhat.vscode-xml",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "firefox-devtools.vscode-firefox-debug",
+        "streetsidesoftware.code-spell-checker",
+        "davidanson.vscode-markdownlint",
+        "ctcuff.font-preview",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "forwardPorts": [1119],
+  "portsAttributes": {
+    "1119": {
+      "label": "previewSite",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "chmod u+x .devcontainer/*.sh && bash -c .devcontainer/codespaceOnCreate.sh",
+  "postStartCommand": "bash -c .devcontainer/codespaceOnStart.sh"
+}
