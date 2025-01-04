@@ -5,76 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>#MamaNyoSquad</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="https://mamanyosquad.github.io/media/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="media/favicon.png" type="image/x-icon">
-    <link rel="manifest" href="manifest.json"> <!-- PWA -->
-    <style type="text/css">
-      /* attach in-html custom css args here */
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
-      .sinoEvent {
-        background-color: #d8dce4;
-        background-image: url(media/images/wp6289040-beautiful-cloudy-sky-anime-wallpapers.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        font-family: "Noto Serif JP", serif;
-        color: #ffffff;
-        padding: 47.5px 19px;
-        text-align: center;
-      }
-      .sinoBtn {
-        background-color: #d8dce4;
-        border: none;
-        border-radius: 1900px;
-        color: #000000;
-        margin: 9.5px;
-        padding: 19px;
-        font-family: inherit;
-        font-weight: bold;
-        font-size: inherit;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-      }
-      .sinoBtn:hover { 
-        background-color: #000000;
-        color: #d8dce4;
-      }
-      .snowBride {
-        max-width: 100%;
-        height: auto;
-      }
-      .LoveLivebtn {
-        padding: 19px 38px;
-        color: #fff;
-        background-color: #e3007a;
-        border: solid 3.8px #fff;
-        border-radius: 1900px;
-        font-family: "LoveLive", serif;
-        font-size: inherit;
-        cursor: pointer;
-        -webkit-transition: 0.95s;
-        -moz-transition: 0.95s;
-        -o-transition: 0.95s;
-        transition: 0.95s;
-      }
-      .LoveLivebtn:hover {
-        background-color: #92004e;
-      }
-      .basicHead-fore > div > img {
-        display: inline-block;
-        padding: 9.5px;
-        border-radius: 19px;
-        pointer-events: initial;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json"> <!-- PWA -->
     <meta name="og:type" content="website">
     <meta name="og:title" content="#MamaNyoSquad">
-    <meta name="og:image" content="https://mamanyosquad.github.io/media/preview/20240531.png">
+    <meta name="og:image" content="https://mamanyosquad.github.io/assets/preview.png">
     <meta name="og:url" content="https://mamanyosquad.github.io">
-    <meta name="og:description" content='"LoveLive! SIF2 MIRACLE LIVE!", 2023-2024'>
+    <meta name="og:description" content="Enter the universe through the eyes of the Tengu! 💕">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@MamaNyoSquad">
     <meta name="theme-color" content="#161224">
@@ -82,207 +20,135 @@
     <meta name="msapplication-navbutton-color" content="#161224">
     <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
     <!-- custom css -->
-    <link href="css/important.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/homefeed.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/MamaNyo19.css" rel="stylesheet" type="text/css" media="all">
-    <!-- custom scripts -->
-    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="text/javascript"></script> <!-- Twitter Timelines (original) -->
-    <!-- <script async src="scripts/X_widgets.js" charset="utf-8" type="text/javascript"></script> Twitter Timelines (but rebranded to X) -->
-    <script src="scripts/events.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
+    <style type="text/css">
+      /* css args here */
+      @import url("/assets/css/core.css");
+      @import url("/assets/css/responsive.css");
+      @import url("/assets/css/index.css");
+    </style>
+    <!-- custom js -->
+    <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
+    <script src="/assets/js/pwa.js" type="text/javascript"></script> <!-- pwa -->
+    <script src="/assets/js/index.js" type="text/javascript"></script>
+    <script src="/assets/js/responsive.js" type="text/javascript"></script>
+    <script src="/assets/js/event.js" type="text/javascript"></script>
     <script type="text/javascript">
-      function launch() {
-        // launch args here
-        launchArchive();
-        specialEvent();
+      function start() {
+        // start() args here
       }
     </script>
+    <script type="text/javascript">
+      // js args here
+    </script>
   </head>
-  <body onload="launch()">
-    <!-- <div class="NyoHeader">
-      <video class="NyoHead" autoplay muted loop oncontextmenu="return false">
-        <source src="media/videos/20240627.mp4" type="video/mp4">
-      </video>
-    </div> -->
-    <iframe
-      class="ytembed"
-      src="https://www.youtube-nocookie.com/embed/DWinLmqHOPo?loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1&playlist=DWinLmqHOPo"
-      allow="autoplay">
-    </iframe>
-    <!-- <iframe
-      class="ytembed"
-      src="https://www.youtube-nocookie.com/embed/ZRFdMWM9RCU?list=PLpHVxNVX3ZfXzsBu_6ToLP-i4jNGUoX1q&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
-      title="active events"
-      allow="autoplay">
-    </iframe> -->
-    <div id="ImportantHEAD" onclick="eventBanner()">
-      <p class="ImportantFEED"></p>
+  <body onload="init()">
+    <div id="mobile-navPanel" class="mobile">
+      <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
+      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
+      <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
+      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
+      <span class="material-symbols-rounded closeNav" onclick="mobilePanelClose()">close</span>
     </div>
-    <header>
-      <div class="siteHEADER">
-        <div class="logoHead">
-          <div class="NyoLogo"></div>
-        </div>
-        <div class="HeadURLs">
-          <span class="HeadURLSpan Active">Home</span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="policies">Policies</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="events">Events</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="archive">Archives</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="publishing">Publishing</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="blog">Blog</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="maintenance">Maintenance</a></span>
-        </div>
-      </div>
-    </header>
-    <!-- <div class="basicHead-back" style="background-image: url(media/images/sif2_eos_bg.png); font-family: 'LoveLive', serif !important;">
-      <div class="basicHead-fore" style="background-color: unset;">
-        <img style="width: 625px;"
-          src="https://lovelive-sif2.com/wordpress/wp-content/themes/sif2_gl_v1.3/assets/images/common/logo.png"
-          alt="LoveLive! School idol festival 2 MIRACLE LIVE!">
-        <br><br>
-        <h1 style="width: 625px; max-width: 100%; margin: 0 auto;">
-          Thank you for your unending support of the game! All online game
-          services have been closed as of 31 May 2024 6am UTC.
-        </h1>
-        <br><br>
-        <button class="LoveLivebtn" onclick="window.open('https://lovelive-sif2.com')">Website (English)</button>
-      </div>
-    </div> -->
-    <!-- <div class="basicHead-back">
-      <div class="basicHead-fore">
-        <h1>Are you ready to meet the new Venus?</h1>
-        <div>
-          <img src="https://i.ytimg.com/vi/wk131eoZGDk/hq720.jpg" onclick="window.open('https://youtu.be/wk131eoZGDk')" alt="【DOAXVV】ブイなま！！特別編「新女神登場！？オーナーたちで見守る国際版スペシャルプログラム」" width="570px" title="【DOAXVV】ブイなま！！特別編「新女神登場！？オーナーたちで見守る国際版スペシャルプログラム」">
-          <img src="https://i.ytimg.com/vi/g8OI0yuTeKo/hq720.jpg" onclick="window.open('https://youtu.be/g8OI0yuTeKo')" alt="[DOAXVV] New Venus Reveal Special Program" width="570px" title="[DOAXVV] New Venus Reveal Special Program">
-        </div>
-      </div>
-    </div> -->
-    <div class="InceptAnniv">
-      <h1>Take a look at our Inception Anniversaries!</h1>
-      <button class="NyoBtn" onclick="window.open('anniversary')">Inception Anniversaries</button>
-    </div>
-    <div class="GeneralDIV">
-      <p class="MamaNyoTTF">Get Involved</p>
-      <div class="MamaNyo19-row">
-        <div class="dualfeed-row">
-          <div class="dualfeed-col">
-            <a rel="noopener noreferrer" class="twitter-timeline" data-lang="en" data-height="950" data-dnt="true" data-theme="dark" href="https://twitter.com/MamaNyoSquad">Posts by @MamaNyoSquad</a>
+    <div class="headers"> <!-- header -->
+      <header class="desktop">
+        <div class="flexNav">
+          <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <div class="linkRefs">
+            <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
+            <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
+            <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
           </div>
-          <div class="dualfeed-col">
-            <a rel="noopener noreferrer" class="twitter-timeline" data-lang="en" data-height="950" data-dnt="true" data-theme="dark" href="https://twitter.com/doax_vv_staff">Posts by @doax_vv_staff</a>
+        </div>
+      </header>
+      <header class="mobile">
+        <div class="flexNav">
+          <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
+          <div class="linkRefs">
+            <span class="material-symbols-rounded" onclick="mobilePanelOpen()">menu</span>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="hero"> <!-- hero section -->
+      <div class="hero-fhd">
+        <div class="heroHead1-fhd">
+          <div class="heroHead2-fhd">
+            <div class="heroSlogan-fhd">
+              <img src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe">
+              <br>
+              <h2>Our new look</h2>
+              <p>
+                After our continuous effort in R&D, we're excited to unveil our new web design
+                language to commemorate a new beginning as a Squad! 💕
+              </p>
+              <button onclick="window.open('/blog/20241206')">Read our approach</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-hd">
+        <div class="heroHead1-hd">
+          <div class="heroHead2-hd">
+            <div class="heroSlogan-hd">
+              <div class="viewSlogan-hd">
+                <img class="sloganLogo-hd" src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe">
+                <br>
+              </div>
+              <h2>Our new look</h2>
+              <p>
+                After our continuous effort in R&D, we're excited to unveil our new web design
+                language to commemorate a new beginning as a Squad! 💕
+              </p>
+              <button onclick="window.open('/blog/20241206')">Read our approach</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footerTagline">
-        <div class="entertheuniverse"></div>
-      </div>
-      <div class="footerText">
-        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://x.com/MamaNyoSquad" target="_blank">The X Platform</a></span>
-        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://youtube.com/@MamaNyoSquad" target="_blank">YouTube</a></span>
-        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="mailto:mamanyosquad@outlook.com">Email</a></span>
-        <br>
-        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io" target="_blank">GitHub Repository</a></span>
-        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">Fork and Improve</a></span>
-        <br>
-        <p>
-          <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml" target="_blank" title="See the current GitHub Action here.">
-            <img src="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy" alt="">
-          </a>
-        </p>
-        <p style="font-weight: normal;">
-          Source code licensed under MIT License, site content under CC-BY 4.0 INTL and above
+    <div feed>
+      <div>
+        <div style="text-align: center;">
+          <br><br><br>
+          <div class="annivColl">
+            <div class="annivOVL"></div>
+            <img src="/assets/images/annivCollection.png" alt="">
+          </div>
           <br>
-          #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
-        </p>
+          <h2>Celebrating our 4th Anniversary as a Collective</h2>
+          <p>
+            #MamaNyoSquad has been constantly innovating to relive the hype of DEAD OR
+            ALIVE through Venus Vacation and beyond. With the 4th Inception Anniversary,
+            the ever-shining Prism continues to shine even brighter than before!
+          </p>
+          <p>
+            Together with Nyotengu and the fellow Venuses, let's continue on our promise
+            of continuous preservation of DOA's memories through our creative efforts!
+          </p>
+          <button style="margin: 9.5px 1.9px 1.9px 1.9px;" onclick="window.open('https://youtu.be/PuIJe3EaRzU')">Watch the full Keynote</button>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="transcriptShow('20241206_4anniv')">Presenter's Transcript</button>
+          <br><br><br>
+        </div>
       </div>
-      <img class="tbmassoc" src="media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+    </div>
+    <footer> <!-- footer -->
+      <div id="footPage">
+        <div>
+          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/github.svg" width="28.5px" alt="GitHub" title="Check out our GitHub repository" onclick="window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io')">
+          <img class="social-icon" src="/assets/svg/social/X.svg" width="28.5px" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="window.open('https://x.com/MamaNyoSquad')">
+          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/youtube.svg" width="28.5px" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="window.open('https://youtube.com/@MamaNyoSquad')">
+          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
+        </div>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="footTime">Fetching time...</span></p>
+        <br>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a tbmassoc rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a tbmassoc rel="noopener noreferrer" style="cursor: pointer;" onclick="window.location.replace('/policies')" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+      </div>
     </footer>
   </body>
 </html>
-
-<!-- DIV REFERENCES
-
-  div separator (inherited from thebelovedmoon/thebelovedmoon)
-
-  <div class="divTranst" style="background-color: var([Venus 5, see :root{} in root css]);"></div>
-
-
-  #MamaNyoWeek
-
-  <div class="NyoWeekHead">
-    <div class="NyoHeart-right">
-      <div class="MamaNyoWeekLogo">
-        <div class="MamaNyoWeek-2022"></div>
-      </div>
-      <h1>#MamaNyoWeek is <strong style="color: #06a8ff;">ONGOING</strong> from 17 to 23 Nov!</h1>
-    </div>
-  </div>
-
-
-  #MamaNyo19 - feature image
-
-  <div class="MamaNyo19-back">
-    <div class="MamaNyo19-fore"></div>
-  </div>
-
-  
-  #MamaNyo19 - date
-
-  <div class="MamaNyo19Div">
-    <div class="NyoHeart-left">
-      <div class="MamaNyo19LogoPlace">
-        <div class="MamaNyo19"></div>
-      </div>
-      <p class="MamaNyoTTF">Sunday, 19 Nov 2023</p>
-    </div>
-  </div>
-
-
-  #MamaNyo19 - events
-
-  <div>
-    <p class="MamaNyoTTF"><b>Happy Birthday / Special Day, Mama Nyo!</b></p>
-    <div class="MamaNyo19-row">
-      <div class="MamaNyo19-col">
-        <img class="MamaNyoFeat" src="https://doax-venusvacation.jp/wp-content/uploads/2022/11/3be82201beb2bd410a54d07c2af21e7a860e6afbc5ca7608f37f29e209fb04a2.jpg" alt="">
-        <br><br>
-        <button class="NyoBtn" onclick="window.open('[Japanese Edition]')">Japanese Edition</button>
-      </div>
-      <div class="MamaNyo19-col">
-        <img class="MamaNyoFeat" src="https://game.doaxvv.com/production/html/information/img/2022/11/04eec3855789ec0f38c295ce9081772648fd28c9e8c142b810cb055f06956d72_en.png" alt="">
-        <br><br>
-        <button class="NyoBtn" onclick="window.open('[Global Edition]')">Global Edition</button>
-      </div>
-    </div>
-    <!- (this part will be for other stuff related to the event) ->
-    <br>
-    <img class="MamaNyoChibi" src="https://doax-venusvacation.jp/wp-content/themes/doax-venusvacation/img/character/mini_c06.png" alt="">
-  </div>
-
-
-  #MamaNyo19 - video embed
-  NOTE: this must be visible starting from #MamaNyo19 until the end of #MamaNyoWeek.
-
-  <iframe
-    class="ytembed"
-    src="https://www.youtube-nocookie.com/embed/Epf4mVJQFdU?list=PLpHVxNVX3ZfXTSGB0EAlXUkkWaFTxibdw&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
-    title="#MamaNyo19 Playlist Edition"
-    allow="autoplay">
-  </iframe>
-
-
-  Venus Inception - Japanese
-
-  <div id="ImportantHEAD" onclick="eventBanner()">
-    <b>シャンディがグローバル版27代目ヴィーナスに就任しました! 詳しくは<a rel="noopener noreferrer" class="HeadURL" href="[Japanese Edition]" target="_blank">こちら</a>。</b>
-  </div>
-
-  Venus Inception - Global
-
-  <div id="ImportantHEAD" onclick="eventBanner()">
-    <b>Koharu has just been incepted as the 25th Venus of the Global Edition! More <a rel="noopener noreferrer" class="HeadURL" href="[Global Edition]" target="_blank">here</a>.</b>
-  </div>
-
--->

@@ -1,0 +1,88 @@
+/* root stylesheets */
+
+/* root fonts, use fonts.css for other ones */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #161224;
+}
+body {
+  font-family: "Poppins", "Noto Sans JP", "Noto Color Emoji", sans-serif;
+  color: #ffffff;
+}
+
+a:link, a:visited {
+  color: #ff0000;
+  text-decoration: none;
+}
+a:hover {
+  color: #dd0000;
+  text-decoration: none;
+}
+a:active {
+  color: #ff5555;
+  text-decoration: none;
+}
+
+code {
+  background-color: #ffffff40;
+  padding: 4.75px;
+  -moz-border-radius: 4.75px;
+  -ms-border-radius: 4.75px;
+  -webkit-border-radius: 4.75px;
+  -o-border-radius: 4.75px;
+  border-radius: 4.75px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* responsive fontsize */
+@media screen and (max-width: 540px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1080px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1620px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 1620px) and (max-width: 2160px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

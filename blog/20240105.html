@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>Page not found</title>
+    <title>「正義」は生き続ける。 &mdash; 5 Jan 2024</title>
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
     <meta name="theme-color" content="#161224">
@@ -15,16 +15,25 @@
     <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
     <style type="text/css">
       /* css args here */
-      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts icons */
       @import url("/assets/css/core.css");
       @import url("/assets/css/responsive.css");
       @import url("/assets/css/index.css");
+      @import url("/assets/css/blog.css");
+      .heroBack {
+        background-image: url("/assets/images/bloghead/20240105_SINoALICEJPEOS.png");
+        background-attachment: unset;
+      }
+      .heroFore {
+        background-color: unset;
+        padding: calc(285px + 95px) 19px 285px 19px;
+      }
     </style>
     <!-- custom js -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
     <script src="/assets/js/pwa.js" type="text/javascript"></script> <!-- pwa -->
     <script src="/assets/js/index.js" type="text/javascript"></script>
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
+    <script src="/assets/js/blog.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
@@ -39,23 +48,69 @@
       <header class="desktop">
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
-        <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+          <div class="linkRefs">
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
           </div>
         </div>
       </header>
       <header class="mobile">
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
-        <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+          <div class="linkRefs">
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+          </div>
         </div>
       </header>
     </div>
-    <div class="notFoundHead">
-      <img style="margin: 0 auto;" src="/assets/images/chibi/NYO_lose.png" alt="" width="285px">
-      <br>
-      <h2>E404: Page not found</h2>
+    <div class="hero"> <!-- hero section -->
+      <div class="heroBack"><div class="heroFore"></div></div>
+    </div>
+    <div feed>
+      <div>
+        <div class="blogText">
+          <span blogType>BLOG</span>
+          <h1>「正義」は生き続ける。</h1>
+          <span>5 Jan 2024</span>
+          <br><br><br>
+          <p>
+            This is <b>Emmannuel Ortega</b>, Social &amp; Web Manager for #MamaNyoSquad.
+          </p>
+          <p>
+            We are almost at the end of an era as SINoALICE bids farewell for the final
+            moment for everyone playing on the Japanese Edition. We at the Squad had been
+            tuning in as the news unfolds to the rest of the nation.
+          </p>
+          <p>
+            As a fellow player, I understood what the others feel as they mourn the loss
+            of another great game that has touched the hearts of the many; however, may we
+            utilize this moment to cherish our past experiences as we usher forward to the
+            brighter future.
+          </p>
+          <p>
+            I would like to extend my thanks to SQUARE ENIX and Pokelabo for keeping the
+            spirit alive to its last breath. Without your support, there will be no
+            SINoALICE as we know it today. The accolades both of you had shared to the
+            players will always linger on forever.
+          </p>
+          <p>
+            To Yoko Taro, who have been the brains behind this project: As Nana Bajo, you
+            have my sincerest thanks in everything that you do for SINoALICE. I hope that
+            you will be able to usher forward with your new projects as well as
+            revolutionizing things that captured everyone's hearts to the fullest.
+          </p>
+          <p>
+            For the final moment, before the Farewell Special: <b>Godspeed, SINoALICE!</b>
+          </p>
+          <br><br>
+          <p><b>「正義」は生き続ける。</b></p>
+          <p>
+            <b>シノアリス日本語版<br>
+            2017年6月6日～2024年1月15日</b>
+          </p>
+        </div>
+      </div>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">

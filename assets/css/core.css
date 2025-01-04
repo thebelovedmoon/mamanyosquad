@@ -1,0 +1,243 @@
+/* core stylesheets */
+
+@import url("/assets/css/fonts.css"); /* all the other fonts */
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* googlefonts icons */
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 1.9rem;
+  user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0 7.6px;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+}
+.material-symbols-rounded:hover {
+  font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
+  color: #bbbbbb;
+}
+
+header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 1900;
+  padding: 19px 38px;
+  background: linear-gradient(#ff0000a0, #00000000);
+  /*
+  background-image: url("/assets/images/background/nyoRed.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  */
+}
+.flexNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkRefs {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#mobile-navPanel {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 3800;
+  padding: 28.5px 38px 19px 38px;
+  background-color: #161224;
+  text-align: right;
+  box-shadow: 0 9.5px 19px #ff0000a0;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+  transform: translateY(-19rem);
+  background-image: url("/assets/images/background/nyoBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.closeNav {
+  margin-left: 19px;
+}
+
+footer {
+  background-color: #000000;
+  padding: 19px 38px;
+  overflow: auto;
+}
+.footText {
+  font-weight: 200;
+  font-size: small !important;
+  margin: 0 9.5px;
+}
+.footText > [tbmassoc]:link, [tbmassoc]:visited {
+  color: #ffffff;
+}
+.footText > [tbmassoc]:hover, [tbmassoc]:active {
+  color: #dcc6bb;
+}
+
+button {
+  background-color: #161224;
+  border: solid 2.85px #ff0000;
+  border-radius: 1900px;
+  color: inherit;
+  padding: 11.875px 28.5px;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  margin: 9.5px 1.9px 28.5px 1.9px;
+  cursor: pointer;
+  -webkit-transition: 0.475s;
+  -moz-transition: 0.475s;
+  -o-transition: 0.475s;
+  transition: 0.475s;
+}
+button:hover {
+  background-color: #ff0000;
+  border: solid 2.85px #06a8ff;
+}
+button:active {
+  background-color: #ffffff;
+  border: solid 2.85px #06a8ff;
+  color: #ff0000;
+  -webkit-transition: 0.19s;
+  -moz-transition: 0.19s;
+  -o-transition: 0.19s;
+  transition: 0.19s;
+}
+
+/* toggle between "inline-block" and "none" if there are active notifications */
+/* for .xvvNotify, uncomment "margin-right" if it'll be the only one in the navbar */
+.xvvNotify {
+  display: none;
+  /* display: inline-block; */
+  /* margin-right: 19px; */
+}
+.xvvNotify:hover {
+  color: #ff0000;
+}
+.xvvEvent {
+  display: none;
+  /* display: inline-block; */
+  margin-right: 19px;
+}
+.xvvEvent:hover {
+  color: #06a8ff;
+}
+
+/* base dialog */
+dialog {
+  position: relative;
+  width: 950px;
+  max-height: 100%;
+  max-height: 100%;
+  border-radius: 19px;
+  max-width: 100%;
+  background-color: #161224;
+  border: none;
+  color: inherit;
+  text-align: center;
+  padding: 0;
+}
+dialog:focus {
+  outline: 0;
+}
+dialog::backdrop {
+  background-color: #16122480;
+}
+dialog > span { /* close button */
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 9.5px 9.5px 0 0;
+  padding: 9.5px !important;
+  aspect-ratio: 1 / 1;
+  background-color: #161224;
+  border-radius: 50%;
+  color: #ffffff;
+  box-shadow: 0 0 4px #16122440, 0 4px 8px #16122480;
+  -webkit-transition: 0.475s !important;
+  -moz-transition: 0.475s !important;
+  -o-transition: 0.475s !important;
+  transition: 0.475s !important;
+}
+dialog > span:hover {
+  background-color: #ff0000;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+  color: #ffffff !important;
+}
+
+/* xvvNotify() */
+#xvvNtf { padding: 19px; }
+
+/* xvvEvent() */
+#xvvEvt {
+  background-color: #ffffff !important;
+  height: 712.5px;
+}
+dialog > iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: all;
+}
+
+/* article layout */
+.heroBack {
+  position: -webkit-sticky;
+  position: sticky;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -19;
+}
+.heroFore {
+  background-color: #161224a0;
+  padding: calc(285px + 95px) 19px 285px 19px;
+  text-align: center;
+}
+[feed] {
+  width: 100vw;
+  padding: 19px;
+}
+[feed] > div {
+  width: calc(190px * 5);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* footer */
+.social-icon {
+  pointer-events: visible;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3.8px 5.7px 0 5.7px;
+  padding: 2.85px;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
+}
+.social-icon:hover {
+  transform: scale(1.19);
+}

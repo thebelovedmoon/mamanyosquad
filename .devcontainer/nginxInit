@@ -1,0 +1,32 @@
+server {
+
+	listen 1119 default_server;
+	listen [::]:1119 default_server;
+
+	root /workspaces/mamanyosquad.github.io;
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name _;
+
+	location / {
+
+		try_files $uri $uri/ =404;
+
+		if (!-e $request_filename) {
+
+			rewrite ^/([^\.]+)$ /$1.html;
+
+		}
+	
+	}
+	
+	error_page 404 /404.html;
+	
+	location = /404.html {
+
+		root /workspaces/mamanyosquad.github.io;
+		internal;
+
+	}
+
+}

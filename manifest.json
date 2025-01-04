@@ -11,7 +11,7 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa/appx_512px.png",
+      "src": "/assets/pwa/appx_512px.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -24,22 +24,22 @@
       "url": "publishing",
       "icons": [
         {
-          "src": "media/images/pwa/icon_publishing.png",
+          "src": "/assets/pwa/icon_publishing.png",
           "type": "image/png",
           "sizes": "192x192",
-          "description": "The publishing arm of #MamaNyoSquad, home to Venus Island Diaries."
+          "description": "The publishing arm of #MamaNyoSquad, home of Venus Island Diaries."
         }
       ]
     },
     {
-      "name": "The Squad's Blog",
+      "name": "PR and Blogs",
       "url": "blog",
       "icons": [
         {
-          "src": "media/images/pwa/icon_blog.png",
+          "src": "/assets/pwa/icon_blog.png",
           "type": "image/png",
           "sizes": "192x192",
-          "description": "The blog posts from the SquadMates and in general!"
+          "description": "Press Releases and Blogs from the SquadMates"
         }
       ]
     },
@@ -48,7 +48,7 @@
       "url": "maintenance",
       "icons": [
         {
-          "src": "media/images/pwa/icon_maintenance.png",
+          "src": "/assets/pwa/icon_maintenance.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "Stay updated on the most recent Maintenance Routines from the Japanese and Global Edition!"
@@ -60,7 +60,7 @@
   "start_url": "/",
   "theme_color": "#161224",
   "scope": "/",
-  "id": "/?homescreen=1",
+  "id": "/?pwa=1",
   "prefer_related_applications": false,
   "edge_side_panel": {
     "preferred_width": 475
@@ -75,25 +75,25 @@
   ],
   "screenshots": [
     {
-      "src": "media/images/pwa/screen_wide.png",
+      "src": "/assets/pwa/screen_wide.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
     },
     {
-      "src": "media/images/pwa/screen_narrow.png",
+      "src": "/assets/pwa/screen_narrow.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
-      "src": "media/images/pwa/screen_publishing.png",
+      "src": "/assets/pwa/screen_publishing.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
     },
     {
-      "src": "media/images/pwa/screen_maintenance.png",
+      "src": "/assets/pwa/screen_maintenance.png",
       "type": "image/png",
       "sizes": "1080x1920",
       "form_factor": "narrow"
