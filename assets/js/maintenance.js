@@ -41,10 +41,10 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 // maintenance tracking (gl)
 function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2024 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
-  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2024 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2025 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2025 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-en_gl").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2024";
+  document.getElementById("maintDate-en_gl").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2025";
 
   document.getElementById("stTime-en_gl").innerHTML = hr12(st.getHours()) + ":" + addZero(st.getMinutes()) + ampm(st.getHours());
   document.getElementById("edTime-en_gl").innerHTML = hr12(ed.getHours()) + ":" + addZero(ed.getMinutes()) + ampm(ed.getHours());
