@@ -12,11 +12,11 @@ function showMaintenance() {
 // maintenance tracking (ja)
 function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2024 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
-  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2024 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2025 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2025 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-ja_jp").innerHTML = "2024年" + (st.getMonth() + 1) + "月" + st.getDate() + "日";
-  document.getElementById("maintDate-en_jp").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2024";
+  document.getElementById("maintDate-ja_jp").innerHTML = "2025年" + (st.getMonth() + 1) + "月" + st.getDate() + "日";
+  document.getElementById("maintDate-en_jp").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2025";
 
   document.getElementById("stTime-ja_jp").innerHTML = st.getHours() + "時" + addZero(st.getMinutes()) + "分";
   document.getElementById("edTime-ja_jp").innerHTML = ed.getHours() + "時" + addZero(ed.getMinutes()) + "分";
