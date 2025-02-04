@@ -1,54 +1,59 @@
-function xvvNotify() {
+function xvvDialog(func) {
 
-  document.body.innerHTML += `
-    <dialog id="xvvNtf">
-      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvNtfClose')">close</span>
-      <p>
-        This dialog contains all of the urgent information that is required to be
-        displayed to the end-users. It will be populated once there are enough info.
-      </p>
-    </dialog>
-  `;
+  switch(func) {
 
+    case "survey": // DOAXVV surveys 
+      document.body.innerHTML += `
+        <dialog id="xvvMdl">
+          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
+          <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en" allowfullscreen></iframe>
+        </dialog>
+      `;
+      break;
+
+    case "notify": // #MamaNyoSquad announcements
+      document.body.innerHTML += `
+        <dialog id="xvvMdl" style="background-color: #161224 !important; padding: 19px;">
+          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
+          <div id="ajaxTxt"></div>
+        </dialog>
+      `;
+      const ajaxLoad = new XMLHttpRequest();
+      ajaxLoad.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
+      ajaxLoad.open("GET", "/assets/notify.txt");
+      ajaxLoad.send();
+      break;
+
+    case "event": // announcements from DOAXVV
+      document.body.innerHTML += `
+        <dialog id="xvvMdl">
+          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
+          <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
+        </dialog>
+      `;
+      function ifEmbed(e) {
+        if (e == "xvv") {
+          let xvvId = "maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en",
+            xvv = "https://game.doaxvv.com/production/html/information/" + xvvId + ".html";
+          return xvv;
+        } else if (e == "yt") {
+          let ytId = "iif5ng2p3dE"
+            yt = "https://www.youtube-nocookie.com/embed/" + ytId + "?rel=0";
+          return yt;
+        }
+      }
+      break;
+
+    default: // none will be executed in this part
+
+  }
+  
   // execute Modal
-  document.getElementById("xvvNtf").showModal();
+  document.getElementById("xvvMdl").showModal();
 
 }
 
-function xvvEvent() {
-
-  document.body.innerHTML += `
-    <dialog id="xvvEvt">
-      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvEvtClose')">close</span>
-      <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
-    </dialog>
-  `;
-
-  function ifEmbed(e) {
-    if (e == "xvv") {
-      let xvvId = "maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en",
-        xvv = "https://game.doaxvv.com/production/html/information/" + xvvId + ".html";
-      return xvv;
-    } else if (e == "yt") {
-      let ytId = "iif5ng2p3dE"
-        yt = "https://www.youtube-nocookie.com/embed/" + ytId + "?rel=0";
-      return yt;
-    }
-  }
-
-  // execute Modal
-  document.getElementById("xvvEvt").showModal();
-
-}
-
-function closeModal(x) {
-
-  if (x == "xvvNtfClose") {
-    document.getElementById("xvvNtf").close();
-    document.getElementById("xvvNtf").remove();
-  } if (x == "xvvEvtClose") {
-    document.getElementById("xvvEvt").close();
-    document.getElementById("xvvEvt").remove();
-  }
-
+function closeModal() {
+  document.getElementById("xvvMdl").close();
+  document.getElementById("xvvMdl").remove();
 }
