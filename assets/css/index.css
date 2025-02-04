@@ -47,9 +47,7 @@
   margin: 0 auto;
   text-align: center;
 }
-.sloganLogo-hd {
-  padding: 0 28.5px;
-}
+.sloganLogo-hd { padding: 0 28.5px; }
 
 @media screen and (min-width: 665px) {
   #footPage {
