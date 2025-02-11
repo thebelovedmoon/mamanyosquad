@@ -12,11 +12,11 @@ function showMaintenance() {
 // maintenance tracking (ja)
 function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2024 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
-  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2024 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2025 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2025 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-ja_jp").innerHTML = "2024年" + (st.getMonth() + 1) + "月" + st.getDate() + "日";
-  document.getElementById("maintDate-en_jp").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2024";
+  document.getElementById("maintDate-ja_jp").innerHTML = "2025年" + (st.getMonth() + 1) + "月" + st.getDate() + "日";
+  document.getElementById("maintDate-en_jp").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2025";
 
   document.getElementById("stTime-ja_jp").innerHTML = st.getHours() + "時" + addZero(st.getMinutes()) + "分";
   document.getElementById("edTime-ja_jp").innerHTML = ed.getHours() + "時" + addZero(ed.getMinutes()) + "分";
@@ -30,21 +30,21 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.getElementById("impt-ja_jp").style.display = toggle[0];
-  document.getElementById("impt-en_jp").style.display = toggle[0];
+  document.getElementById("impt-ja_jp").style.display = toggle[1];
+  document.getElementById("impt-en_jp").style.display = toggle[1];
 
-  document.getElementById("impt-ja_jp").innerHTML = "TODO：";
-  document.getElementById("impt-en_jp").innerHTML = "TODO:";
+  document.getElementById("impt-ja_jp").innerHTML = "TODO：ほのかの「True Colors」衣装装備時のエピソードのバグ修正";
+  document.getElementById("impt-en_jp").innerHTML = "TODO: Bug fix to Episodes whilst equipping Honoka's True Colors Outfit";
 
 }
 
 // maintenance tracking (gl)
 function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2024 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
-  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2024 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`"` + sMt + ` ` + sDy + `, 2025 ` + sHh + `:` + sMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
+  let ed = new Date(new Date(`"` + eMt + ` ` + eDy + `, 2025 ` + eHh + `:` + eMm + `:00 GMT+` + tzz + `:00"`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-en_gl").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2024";
+  document.getElementById("maintDate-en_gl").innerHTML = st.getDate() + " " + monthDef(st.getMonth()) + " 2025";
 
   document.getElementById("stTime-en_gl").innerHTML = hr12(st.getHours()) + ":" + addZero(st.getMinutes()) + ampm(st.getHours());
   document.getElementById("edTime-en_gl").innerHTML = hr12(ed.getHours()) + ":" + addZero(ed.getMinutes()) + ampm(ed.getHours());
